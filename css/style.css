@@ -2,7 +2,7 @@
 a { color: #333; }
 a:hover { color: #EF6616; }
 #container { width: 1000px; margin: 0 auto; }
-h1 { background: url(../images/top.png) no-repeat; height: 100px; font-size: 0px; color: #497497; padding-left: 50px; padding-top: 50px; }
+h1 { background: url(../images/top1.png) no-repeat; height: 200px; font-size: 0px; color: #497497; padding-left: 50px; padding-top: 50px; }
 /*如果要隐藏顶部文字标题，去掉下面一行前后的注释标志*/
 /*h1 span { display: none; }*/
 nav { line-height: 30px; background: url(../images/nav_bg1.jpg) repeat-x; height: 30px; overflow: hidden; padding-left: 10px; }
