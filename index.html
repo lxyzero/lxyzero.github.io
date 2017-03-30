@@ -1,0 +1,167 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>欢迎来到心晴家园心理咨询网站！</title>
+<link href="./css/reset.css" rel="stylesheet" type="text/css">
+<link href="./css/style.css" rel="stylesheet" type="text/css">
+<script src="./Scripts/html5.js"></script>
+<script src="./Scripts/jquery.js"></script>
+<script src="./Scripts/jquery.d.imagechange.js"></script>
+<script src="./Scripts/jquery.fonteffect.js"></script>
+<script src="./Scripts/jquery.jtab.js"></script>
+<script>
+$(function(){
+	$("h1>span").FontEffect({
+		outline:true,
+		outlineColor1:"#FFF",
+		outlineWeight:2,
+		shadow:true,
+		shadowColor:"#333",
+		shadowOffsetTop:2,
+		shadowOffsetLeft:2,
+		shadowOpacity:0.3,
+		gradient:true,
+		gradientColor:"#72D9FF"
+	});
+	
+	$("nav li:first").css("border-left-style","none");
+	$("nav li:last").css("border-right-style","none");
+	$("#focus").d_imagechange({
+		data: [{"src":"./images/imagechange01.jpg","href":"","title":""}
+			   ,{"src":"./images/imagechange02.jpg","href":"","title":""}
+			  ],
+		width:307,
+		height:226,
+		animateStyle:'x',
+		btnTop:23,
+		playTime:3000
+	});
+	
+	$("#tab").jTab();
+	
+	$(".box1:odd").css("margin-left",8);
+	$('aside').height($('#main').height());
+	
+	$(".box2>h3>span").FontEffect({
+		outline:true,
+		outlineColor1:"#FFF",
+		outlineWeight:1
+	});
+	$("#select").change(function(){
+		$("#username").focus();
+		var v=$(this).val();
+		if(v=="student"){	$("form").attr("action","#");}
+		else if(v=="admin"){$("form").attr("action","#");}
+	});
+	
+	$("#username").focus();
+});
+</script>
+</head>
+<body>
+<div id="container">
+	<header>
+		<h1><span>计算机与信息工程学院 开心e家</span></h1>
+		<nav>
+			<ul>
+				<li><a href="./index.html">首页</a></li>
+				<li><a href='./synopsis.html'>辅导站简介</a></li><li><a href='./institution.html'>机构设置</a></li><li><a href='./Facilityconfiguration.html'>设施配置</a></li><li><a href='./hearthome.html'>心灵家园</a></li><li><a href='./activityshow.html'>活动展示</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="main">
+	<div class="imgbox">
+				<img src="images/DSC_0058.JPG" />
+			</div>
+		<div id="maincontent">
+			<div id="focus"><img src="./images/busy.gif" width="16" height="16" /></div>
+			<div id="tab">
+				<ul class="title">
+					<li class="current"><a href="javascript:void(0);">最新动态</a></li>
+					<li><a href="./synopsis.html">中心简介</a></li>
+				
+				</ul>
+				<ul class="content">
+					<li><span>&raquo;</span>&nbsp;<a href='./activityshow.html'>我院开展“C语言谈心理”等系列活动</a></li><li><span>&raquo;</span>&nbsp;<a href='#'>开心e家线上心理咨询开始啦</a></li><li><span>&raquo;</span>&nbsp;<a href='#'>洛阳理工学院二级心理辅导站试点单位</a></li>
+				</ul>
+				<ul class="content">
+						<li>计算机与信息学院“开心e家”二级心理辅导站成立于2015年6月，由学校学生工作部心理健康教育中心和计算机学院党委统辖领导。面向本学院全体学生，为学生提供心理健康教育、心理咨询、心理治疗服务和全人素质服务的专项机构。负责计算机与信息工程学院大学生心理健康教育工作计划的制定与实施、心理咨询的预约与接待、心理危机的预防与干预、心理委员的培训与指导等工作。</li>
+				</ul>
+			</div>
+			<br>
+	
+			<div class="box1">
+				<div class="title">
+					<h2>工作成果</h2>
+					<div class="more"><a href="./activityshow.html">更多&nbsp;&rsaquo;</a></div>
+				</div>
+				<div class="content">
+					<p>二级心理辅导站试点单位</p>
+					<img src ="images/DSC_0061.JPG"/>
+				</div>
+			</div>
+			
+			<div class="box1">
+				<div class="title">
+					<h2>心灵花园</h2>
+					<div class="more"><a href="./hearthome.html">更多&nbsp;&rsaquo;</a></div>
+				</div>
+				<div class="content">
+					
+					<ul>
+						<li><span>&raquo;</span>&nbsp;<a href='#'>咧嘴大笑</a></li><li><span>&raquo;</span>&nbsp;<a href='#'>为什么你总是那么自卑？</a></li><li><span>&raquo;</span>&nbsp;<a href='#'>拿什么拯救你，我的自信？</a></li><li><span>&raquo;</span>&nbsp;<a href='#'>缺乏自信的的典型“症状”你中了吗？</a></li><li><span>&raquo;</span>&nbsp;<a href='#'>你好，我叫自信</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="box1">
+				<div class="title">
+					<h2>设施配置</h2>
+					<div class="more"><a href="./Facilityconfiguration.html">更多&nbsp;&rsaquo;</a></div>
+				</div>
+				<div class="content">
+					<p>开心e家环境展示</p>
+					<img src="images/Facilityconfiguration.png"/>
+				</div>
+			</div>
+			
+			<div class="box1">
+				<div class="title">
+					<h2>活动展示</h2>
+					<div class="more"><a href="./activityshow.html">更多&nbsp;&rsaquo;</a></div>
+				</div>
+				<div class="content">
+					<p>开心e家心理辅导活动展示</p>
+					<img src = "images/show.jpg"/>
+				</div>
+			</div>
+			
+			<div id="teacher">
+				<marquee hspace="10" scrollamount='2' scrolldelay="1" onmouseover='javascript:this.stop();' onmouseout='javascript:this.start();'>
+				<table>
+					<tr>
+						
+					</tr>
+				</table>
+				</marquee>
+			</div>
+		</div>
+		<aside>
+			<div class="imgboxaside">
+				<img src="images/DSC_0057.JPG">
+			</div>
+				<div id="other"></div>
+		</aside>
+	</div>
+	<footer>
+		咨询预约时间： 每周二、周四下午2:30-5:30 <br/>
+		洛阳理工学院计算机与信息工程学院开心e家二级心理辅导站<br />地址：计算机与信息工程学院实验A楼202室<br />
+	</footer>
+</div>
+
+</body>
+</html>
+
